@@ -37,7 +37,7 @@ Email: marcosantonio.dev@gmail.com
 - Introdução a eventos no DOM.
 
 #### Manipular o DOM com JavaScript para alterar elementos da página dinamicamente 
-- Seleciona um elemento <h1> e altera sua cor e conteúdo.
+- Seleciona um elemento h1 e altera sua cor e conteúdo.
 - Gera dinamicamente uma lista de produtos e insere na página.
 - HTML básico com um título, um parágrafo e uma div onde os produtos são adicionados via JavaScript.
 
