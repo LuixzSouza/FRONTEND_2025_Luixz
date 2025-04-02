@@ -23,41 +23,50 @@ Email: marcosantonio.dev@gmail.com
 
 ## Atividades:
 
-### 1. Introdução(introducao)
+### 1. Aula Introdução(introducao)
+- Criar um array de nomes e imprimir cada um usando forEach .
+- Criar um array de idades e filtrar apenas as maiores de 18.
+- Criar um array de preços e calcular o total usando reduce
 
-#### Neste módulo, exploramos conceitos fundamentais de JavaScript, incluindo:
-- Declaração de variáveis (var, let, const);
-- Tipagem fraca e coerção de tipos;
-- Null e Undefined;
-- Funções normais e Arrow Functions;
-- Callbacks e funções de alta ordem;
-- Estruturas de dados como arrays e objetos;
-- Métodos de array como forEach, map, filter e reduce;
-- Tratamento de erros com try/catch;
-- Introdução a eventos no DOM.
+### 2. Aula Seleção e Ciração(seleca-criacao)
+- Criar um botão que, ao ser clicado, altere a cor de fundo de um parágrafo.
+- Criar um campo de input e um botão. Quando o usuário digitar um nome e
+clicar no botão, o nome deve ser adicionado a uma lista na tela.
+- Criar um contador que aumente e diminua ao clicar nos botões "+" e "-".
 
-#### Manipular o DOM com JavaScript para alterar elementos da página dinamicamente 
-- Seleciona um elemento h1 e altera sua cor e conteúdo.
-- Gera dinamicamente uma lista de produtos e insere na página.
-- HTML básico com um título, um parágrafo e uma div onde os produtos são adicionados via JavaScript.
+### 3. Aula -  Manipulação de eventos do DOM
+- A partir de uma lista de objetos de produtos no estoque, adicionar as linhas
+na tabela de produtos. Chamar a função de atualizar estoque total ao final.
+- Criar um botão para remover um produto da lista em cada linha. Ao remover
+deve atualizar a quantidade total no estoque.
+- Criar dois botões para incrementar e decrementar a quantidade no estoque.
+A cada alteração atualizar a quantidade total de elementos. A cada
+operação chamar uma função que verifica a quantidade do estoque e pinta
+o fundo da cor correspondente.
 
-### 2. Seleção e Ciração(seleca-criacao)
+### 4. Aula
 
-#### HTML:
-- Estrutura com cabeçalho, navegação, seções de introdução, lista de itens, tabela de produtos, formulários e rodapé.
-- Formulário para adicionar produtos a uma tabela.
-- Botões para aumentar e diminuir o estoque de produtos.
+### 5. Aula
+- Crie um formulário de login com campos de usuário e senha e valide se
+ambos foram preenchidos antes de enviar.
+- Crie um formulário com um campo de idade e exiba uma mensagem de
+erro se o usuário inserir um número menor que 18.
+- Crie um formulário para cadastro de produtos com nome e preço. Valide
+se os campos foram preenchidos e adicione os produtos a uma tabela.
 
-#### CSS:
-- Estilização básica para destacar elementos (ex: .destaque, .importante, .danger).
+### 6. Aula
+- Crie uma expressão regular para validar uma senha com:
+    - Pelo menos 8 caracteres
+    - Pelo menos uma letra maiúscula
+    - Pelo menos um número
+    - Aula 06 Expressões regulares 4
+    - Pelo menos um caractere especial
 
-#### JavaScript:
-- Manipulação do DOM:
-    - Muda a cor do título ao carregar a página e ao clicar nele.
-    - Exibe a soma total dos estoques na tela.
-    - Destaca produtos com estoque abaixo de 15 (.danger).
-- Eventos:
-    -  Impede cadastro de produtos repetidos.
-    - Adiciona produtos dinamicamente à tabela.
-    - Remove produtos ao dar duplo clique.
-    - Atualiza estoque ao clicar nos botões "+" e "-".
+💡 **Dica:** Use /^?.*AZ?.*\d)(?.*$!%*?&AZa-z\d@$!%*?&8,$/ .
+
+- Crie um formulário com um campo de telefone e valide se ele está no formato XX XXXXXXXXX .
+- Crie uma regex para validar URLs, aceitando formatos como:
+    - https://www.site.com
+    - http://site.com.br
+    - www.site.com
+💡 **Dica:** Use /^(https?\/\/?(www\.?[a-z09\.[a-z]{2,})$/ .
