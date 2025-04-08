@@ -5,8 +5,11 @@ Tive o prazer de ter aula de Front End com o Marcos Antônio, professor da Unive
 ## Sobre o Professor:
 
 Desenvolvedor de software há aproximadamente 10 anos. Professor Universitário.
+
 Nome: Marcos Antônio dos Santos
+
 gitHub: https://github.com/marcaosi
+
 Email: marcosantonio.dev@gmail.com
 
 ## Data Feito
@@ -32,7 +35,7 @@ Email: marcosantonio.dev@gmail.com
 - Criar um botão que, ao ser clicado, altere a cor de fundo de um parágrafo.
 - Criar um campo de input e um botão. Quando o usuário digitar um nome e
 clicar no botão, o nome deve ser adicionado a uma lista na tela.
-- Criar um contador que aumente e diminua ao clicar nos botões "+" e "-".
+- Criar um contador que aumente e diminua ao clicar nos botões `"+" e "-".`
 
 ### 3. Aula -  Manipulação de eventos do DOM
 - A partir de uma lista de objetos de produtos no estoque, adicionar as linhas
@@ -45,6 +48,16 @@ operação chamar uma função que verifica a quantidade do estoque e pinta
 o fundo da cor correspondente.
 
 ### 4. Aula
+- Criar um formulário de cadastro com os seguintes campos e suas características:
+    - Nome: mínimo de 05 caracteres e obrigatório. Placeholder com: Nome completo
+    - E-mail: e-mail deve ser válido. Placeholder com: E-mail válido.
+    - Senha: mínimo de 08 caracteres e obrigatório.
+- Após os campos, deve ter dois botões:
+    - Enviar
+    - Limpar
+- No botão enviar, deve ser printado no console (console.log) os dados inseridos nos campos pelo usuário.
+- No botão limpar, você deve implementar a lógica para limpar todos os campos usando o id para enviar o valor ""(vazio) para o atributo value.
+- Os dois botões devem ter o type como button para não possuirem comportamento padrão.
 
 ### 5. Aula
 - Crie um formulário de login com campos de usuário e senha e valide se
@@ -62,11 +75,12 @@ se os campos foram preenchidos e adicione os produtos a uma tabela.
     - Aula 06 Expressões regulares 4
     - Pelo menos um caractere especial
 
-💡 **Dica:** Use /^?.*AZ?.*\d)(?.*$!%*?&AZa-z\d@$!%*?&8,$/ .
+💡 **Dica:** Use `/^?.*AZ?.*\d)(?.*$!%*?&AZa-z\d@$!%*?&8,$/ .`
 
-- Crie um formulário com um campo de telefone e valide se ele está no formato XX XXXXXXXXX .
+- Crie um formulário com um campo de telefone e valide se ele está no formato `XX XXXXXXXXX` .
 - Crie uma regex para validar URLs, aceitando formatos como:
-    - https://www.site.com
-    - http://site.com.br
-    - www.site.com
-💡 **Dica:** Use /^(https?\/\/?(www\.?[a-z09\.[a-z]{2,})$/ .
+    - `https://www.site.com`
+    - `http://site.com.br`
+    - `www.site.com`
+  
+💡 **Dica:** Use `/^(https?\/\/?(www\.?[a-z09\.[a-z]{2,})$/ .`
