@@ -252,3 +252,6 @@ const aprovados = notas.filter((nota) => {
     return nota >= 7
 })
 console.log(aprovados)
+
+let agora = new Date();
+ console.log(agora.toString());
