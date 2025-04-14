@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prova Marcos</title>
+    <style>
+        table *{
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .erro{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <section class="s-tables" >
+    <!-- <section class="s-tables" >
         <div class="tablesInputs" >
             <div>
                 <label for="name">Nome</label>
@@ -41,8 +51,84 @@
             <tr class="newUser" >
             </tr>
         </table>
-    </section>
+    </section> -->
 
-    <script src="./script.js" ></script>
+    <!-- <section>
+        <h1>Livros</h1>
+    
+        <form id="form">
+            <div>
+                <label>Título:</label>
+                <input type="text" id="titulo">
+                <span class="erro" id="tituloErro"></span>
+            </div>
+            <div>
+                <label>Autor:</label>
+                <input type="text" id="autor">
+                <span class="erro" id="autorErro"></span>
+            </div>
+            <div>
+                <label>Ano:</label>
+                <input type="number" id="ano">
+                <span class="erro" id="anoErro"></span>
+            </div>
+        <button type="submit">Cadastrar</button>
+        </form>
+    
+        <table>
+            <thead>
+                <tr>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Ano</th>
+                <th></th>
+                </tr>
+            </thead>
+            <tbody id="livros">
+
+            </tbody>
+        </table>
+    </section> -->
+
+    
+    <h1>Cadastro de Filmes 🎬</h1>
+
+    <form id="form">
+        <div>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo">
+        <span class="erro" id="tituloErro"></span>
+        </div>
+        <div>
+        <label for="genero">Gênero:</label>
+        <input type="text" id="genero">
+        <span class="erro" id="generoErro"></span>
+        </div>
+        <div>
+        <label for="ano">Ano de Lançamento:</label>
+        <input type="number" id="ano">
+        <span class="erro" id="anoErro"></span>
+        </div>
+        <button type="submit">Cadastrar Filme</button>
+    </form>
+
+    <h2>Filmes Cadastrados</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Título</th>
+            <th>Gênero</th>
+            <th>Ano</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody id="filmes">
+        <!-- Filmes serão inseridos aqui -->
+        </tbody>
+    </table>
+
+    <!-- <script src="./js/cadastroLivro.js" ></script> -->
+     <script src="./js/cadastroFilmes.js" ></script>
+    <script src="./js/script.js" ></script>
 </body>
 </html>

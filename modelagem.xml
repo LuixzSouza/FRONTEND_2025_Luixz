@@ -1,0 +1,47 @@
+<Cube name="f_compra"
+      caption="Suprimentos: Compra"> 
+    
+    <Table name="f_sp_compra" />
+
+    <Dimension type="StandardDimension"
+               visible="true"
+               highCarinality="false"
+               name="Origem">
+        <Hierarchy hasAll="true"
+                    allMemberName="All"
+                    allMemberCaption="(todos)">
+            <Level name="Origem" visible="true" column="origem" uniqueMembers="true" />
+        </Hierarchy>
+    </Dimension>
+
+    <DimensionUsage source="Data" name="Data da Compra" visible="true" foreignKey="id_data_compra" highCardinality="false" />
+    <DimensionUsage source="Produto" name="Produto" visible="true" foreignKey="id_produto" highCardinality="false" />
+
+    <Measure name="Qtd Comprada" column="qtde" agreggator="sum" formatString="#,###" />
+    <Measure name="Vlr Comprado" column="vlr_unit" agreggator="sum" formatString="#,###.00" />
+    <Measure name="Qtd Compras Realizados" column="nf" agreggator="distinct-count" formatString="#,###" />
+    <Measure name="Qtd Itens Comprados" column="id_produto" agreggator="count" formatString="#,###" />
+
+</Cube>
+
+<Dimension name="Produto">
+    <Hierarchy hasAll="true" allMemberName="All" allMemberCaption="(todos)" primaryKey="id_produto">
+        <Table name="d_produto"/>
+        <Level name="Nome" column="nome" uniqueMembers="true" />
+    </Hierarchy>
+    <Hierarchy name="Produto (por grupo)" hasAll="true" allMemberName="All" allMemberCaption="(todos)" primaryKey="id_produto">
+        <Table name="d_produto"/>
+        <Level name="Grupo" column="grupo" uniqueMembers="true" />
+        <Level name="SubGrupo" column="subgrupo" uniqueMembers="false" />
+        <Level name="Nome" column="nome" uniqueMembers="false" />
+    </Hierarchy>
+</Dimension>
+
+<Dimension name="Data">
+    <Hierarchy hasAll="true" allMemberName="All" allMemberCaption="(todos)" primaryKey="id_data">
+        <Table name="d_data"/>
+        <Level name="Ano" column="ano" uniqueMembers="true" />
+        <Level name="Mes" column="mes" uniqueMembers="false" />
+        <Level name="Dia" column="dia" uniqueMembers="false" />
+    </Hierarchy>
+</Dimension>
